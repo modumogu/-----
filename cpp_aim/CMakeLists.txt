@@ -17,7 +17,8 @@ endif()
 find_package(OpenCV REQUIRED)
 message(STATUS "OpenCV ${OpenCV_VERSION} @ ${OpenCV_DIR}")
 
-add_executable(aim src/main.cpp)
+# 只有一个源文件：aim.cpp
+add_executable(aim aim.cpp)
 target_link_libraries(aim PRIVATE ${OpenCV_LIBS})
 
 # 把 dll 拷到 exe 旁边，省得配 PATH

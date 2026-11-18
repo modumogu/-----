@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "运行 aim（相机）",
+      "name": "run aim (camera)",
       "type": "cppvsdbg",
       "request": "launch",
       "program": "${workspaceFolder}\\build\\aim.exe",
@@ -12,11 +12,11 @@
       "console": "integratedTerminal"
     },
     {
-      "name": "运行 aim（合成视频）",
+      "name": "run aim (bright)",
       "type": "cppvsdbg",
       "request": "launch",
       "program": "${workspaceFolder}\\build\\aim.exe",
-      "args": ["--video", "D:\\学习\\机甲杯\\py_sim\\data\\red_var\\video.mp4"],
+      "args": ["--expo", "-6"],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "build",
       "console": "integratedTerminal"

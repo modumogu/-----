@@ -5,7 +5,8 @@
       "label": "build",
       "type": "shell",
       "command": "cmd",
-      "args": ["/c", "${workspaceFolder}\\build.bat"],
+      "args": ["/c", "build.bat"],
+      "options": { "cwd": "${workspaceFolder}" },
       "group": { "kind": "build", "isDefault": true },
       "problemMatcher": ["$msCompile"],
       "presentation": { "reveal": "always", "panel": "dedicated" }
